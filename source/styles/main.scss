@@ -53,4 +53,18 @@ $color-3: #222533;
         font-size: 36px;
         padding: 28px 101.5px;
     }
+    &.round{
+        &-3{
+            border-radius: 3px;
+        }
+        &-7{
+            border-radius: 7px;
+        }
+        &-12{
+            border-radius: 12px;
+        }
+        &-20{
+            border-radius: 20px;
+        }
+    }
 }
