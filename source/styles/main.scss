@@ -1,14 +1,5 @@
 @import 'reset';
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
-
+@import 'base';
 $font-1: 'Lato', sans-serif;
 
 $color-1: #21C2F8;
