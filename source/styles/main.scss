@@ -1,10 +1,10 @@
-*{
+@import 'reset';
+
+* {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
-body{
+body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
@@ -12,7 +12,7 @@ body{
 $font-1: 'Lato', sans-serif;
 
 $color-1: #21C2F8;
-$color-2: #FFF;
+$color-2: #FFFFFF;
 $color-3: #222533;
 $color-4: #F39705;
 $color-5: #E25611;
@@ -23,127 +23,161 @@ $color-9: #62A783;
 $color-10: #F82F54;
 $color-11: #8FC567;
 
-.bg-color{
-    &-1{
+.bg-color {
+
+    &-1 {
         background-color: $color-1;
     }
-    &-2{
+
+    &-2 {
         background-color: $color-2;
     }
-    &-3{
+
+    &-3 {
         background-color: $color-3;
     }
-    &-4{
+
+    &-4 {
         background-color: $color-4;
     }
-    &-5{
+
+    &-5 {
         background-color: $color-5;
     }
-    &-6{
+
+    &-6 {
         background-color: $color-6;
     }
-    &-7{
+
+    &-7 {
         background-color: $color-7;
     }
-    &-8{
+
+    &-8 {
         background-color: $color-8;
     }
-    &-9{
+
+    &-9 {
         background-color: $color-9;
     }
-    &-10{
+
+    &-10 {
         background-color: $color-10;
     }
-    &-11{
+
+    &-11 {
         background-color: $color-11;
     }
 }
 
-.row{
-    margin-top: 48px;
-    margin-left: 50px;
-    display: flex;
-    align-items: flex-end;
-    .btn{
-        margin-right: 30px;
-        &:last-child{
-            margin-right: 0;
-        }
-    } 
-}
-
-.btn{
-    background-color: $color-1;
-    color: $color-2;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: $font-1;
-    font-weight: 900;
-    font-size: 14px;
+.btn {
     padding: 11px 37px 12px;
     border: none;
-    &.medium{
-        font-size: 18px;
+    background-color: $color-1;
+    color: $color-2;
+    font-family: $font-1;
+    font-size: 14px;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &.medium {
         padding: 14px 47px;
+        font-size: 18px;
     }
-    &.large{
-        font-size: 26px;
+
+    &.large {
         padding: 24px 94px;
+        font-size: 26px;
     }
-    &.x-large{
-        font-size: 36px;
+
+    &.x-large {
         padding: 28px 101.5px;
+        font-size: 36px;
     }
-    &.round{
-        &-3{
+
+    &.round {
+
+        &-3 {
             border-radius: 3px;
         }
-        &-7{
+
+        &-7 {
             border-radius: 7px;
         }
-        &-12{
+
+        &-12 {
             border-radius: 12px;
         }
-        &-20{
+
+        &-20 {
             border-radius: 20px;
         }
     }
-    &.bg-color{
-        &-1{
+
+    &.bg-color {
+
+        &-1 {
             background-color: $color-1;
         }
-        &-2{
+
+        &-2 {
             background-color: $color-2;
         }
-        &-3{
+
+        &-3 {
             background-color: $color-3;
         }
-        &-4{
+
+        &-4 {
             background-color: $color-4;
         }
-        &-5{
+
+        &-5 {
             background-color: $color-5;
         }
-        &-6{
+
+        &-6 {
             background-color: $color-6;
         }
-        &-7{
+
+        &-7 {
             background-color: $color-7;
         }
-        &-8{
+
+        &-8 {
             background-color: $color-8;
         }
-        &-9{
+
+        &-9 {
             background-color: $color-9;
         }
-        &-10{
+
+        &-10 {
             background-color: $color-10;
         }
-        &-11{
+
+        &-11 {
             background-color: $color-11;
         }
     }
-    &:hover{
+
+    &:hover {
         background: $color-3;
+    }
+}
+
+.row {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 48px;
+    margin-left: 50px;
+
+    .btn {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
