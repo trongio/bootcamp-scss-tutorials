@@ -1,2 +1,6 @@
-@import 'media-queries';
-@import 'components/header/index.scss';
+@import 'reset';
+@import 'base';
+@import 'pallete';
+
+// Components
+@import 'components/btn/index';
